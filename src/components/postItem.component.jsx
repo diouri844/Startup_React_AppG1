@@ -11,7 +11,6 @@ function PostItem() {
         border: "1px solid #ccc",
         padding: "10px", 
         margin: "10px 0", 
-        backgroundColor:"#white",
         color:"red",  
         borderRadius: "5px" };
 
