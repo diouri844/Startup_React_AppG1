@@ -7,6 +7,10 @@ import FormValidate from "../challanges/formValidate.challange";
 import UserItem from "../components/UserItem.component";
 import PostList from "../components/postList.component";
 import PostItem from "../components/postItem.component";
+import ListOpt from "../challanges/listOpt.challange"
+import FactorialCalculator from "../challanges/FactorialCalculator.challange"
+import Parent from "../challanges/ParentCHiled.challange";
+import DebouncedSearch from "../challanges/debouncer.challange";
 const RoutesConfig = [
  { path: "/home" , element: <HomePage /> },
   { path : "/about" , element: <AboutPage /> },
@@ -16,8 +20,22 @@ const RoutesConfig = [
   { path : "/user/:userId", element:<UserItem />},
   // postList
   { path : "/posts" , element: <PostList />},
-  { path: "/post/:postId", element: <PostItem />}
   // posts/postId
+  { path: "/post/:postId", element: <PostItem />},
+  // list rendring optimization :
+  { 
+    path : "/list-optimization", element: <ListOpt />
+  },
+  {
+    path:"/factorial-memorize" , element:<FactorialCalculator />
+  },
+  {
+    path:"/props-memo" , element:<Parent />
+  },
+  {
+    path: "/debouncer", element: <DebouncedSearch />
+  }
+
 ];
 
 
